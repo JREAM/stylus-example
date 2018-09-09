@@ -1,0 +1,34 @@
+{
+  "name": "stylus",
+  "version": "1.0.0",
+  "description": "Trying out Stylus",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,styl}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "stylus",
+    "css",
+    "style",
+    "stylesheets"
+  ],
+  "author": "Jesse Boyer",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "parcel-bundler": "^1.9.7",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylus": "^0.54.5"
+  }
+}
